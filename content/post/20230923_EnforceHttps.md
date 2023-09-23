@@ -17,11 +17,12 @@ tags = ["Github","Github Pages","hugo"]
 要するに、CSSファイルのURLを`HTTP`で指定するんじゃなくて`HTTPS`で指定しろよというわけです。  
 
 ## 解消法
-自身はサイト構築に`hugo`を使ってて、`baseURL`とか色々いじっても変わらんなぁ〜と小一時間悩んだ末に以下の通り解決しました。  
+自身はサイト構築に`hugo`を使ってて、`baseURL`とか色々いじっても変わらんなぁ〜と小一時間悩んでいましたが、触る場所が違いました。  
+結果的に以下の手順で解決しました。  
 
 1. Github Pagesで使ってるリポジトリの`Settings`
-1. 左側メニューの`Pages`
-1. ページ真ん中くらいの`Enforce HTTPS`にチェックを入れる
+2. 左側メニューの`Pages`
+3. ページ真ん中くらいの`Enforce HTTPS`にチェックを入れる
 
 {{< img-nz "20230923_EnforceHttps" "images/20230923_EnforceHttps/001.jpg" >}}
 
