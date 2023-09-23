@@ -1,0 +1,9 @@
+{
+	"name": "blog",
+	"image": "klakegg/hugo:ext-ubuntu",
+	"workspaceFolder": "/workspace",
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached",
+	"forwardPorts": [
+		1313
+	]
+}
