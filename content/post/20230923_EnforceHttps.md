@@ -12,7 +12,7 @@ tags = ["Github","Github Pages","hugo"]
 ## エラー
 エラー自体は以下の通り  
 
-> Mixed Content: The page at 'https://aaa.bbb.ccc/' was loaded over HTTPS, but requested an insecure stylesheet 'http://aaa.bbb.ccc/assets/css/xxx.min.css'. This request has been blocked; the content must be served over HTTPS.
+> Mixed Content: The page at 'https://blog.b0cchi.dev/' was loaded over HTTPS, but requested an insecure stylesheet 'http://blog.b0cchi.dev/assets/css/xxx.min.css'. This request has been blocked; the content must be served over HTTPS.
 
 要するに、CSSファイルのURLを`HTTP`で指定するんじゃなくて`HTTPS`で指定しろよというわけです。  
 
