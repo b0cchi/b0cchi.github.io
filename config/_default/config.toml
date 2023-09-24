@@ -1,5 +1,5 @@
 baseURL = "https://blog.b0cchi.dev"
-title = "san値はひとりぼっち"
+title = "脱ひとりぼっち"
 
 theme = "fuji"
 hasCJKLanguage = true
@@ -9,8 +9,8 @@ disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
 
 ## Change this two to switch between different language
-languageCode = "en"           # For RSS, view https://www.rssboard.org/rss-language-codes
-defaultContentLanguage = "en" # For HTML page, now support: en, zh-hans, zh-hant, ja, nl, pl, it
+languageCode = "ja"           # For RSS, view https://www.rssboard.org/rss-language-codes
+defaultContentLanguage = "ja" # For HTML page, now support: en, zh-hans, zh-hant, ja, nl, pl, it
 
 summaryLength = 100 # Custom summary length, add <!--more--> in post file to custom split point
 paginate = 10
@@ -32,7 +32,7 @@ post = "/:section/:filename/" # Custom post links, e.g. "/:year/:month/:title/"
 
 [params]
 author = "b0cchi"                # You can also set author in post front matter individually
-subTitle = "わからないことだらけでsan値がヤバみ"
+subTitle = "b0cchiが　おきあがり　なかまに　になりたそうに　こちらをみている！"
 defaultTheme = "auto"              # default theme when first visit (auto|dark|light)
 
 # Source URL of the website, will appear in the footer
