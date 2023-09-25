@@ -32,7 +32,7 @@ post = "/:section/:filename/" # Custom post links, e.g. "/:year/:month/:title/"
 
 [params]
 author = "b0cchi"                # You can also set author in post front matter individually
-subTitle = "なんと　b0cchiが　おきあがり　なかまに　になりたそうに　こちらをみている！"
+subTitle = "なんと　b0cchiが　おきあがり　なかまに　なりたそうに　こちらをみている！"
 defaultTheme = "auto"              # default theme when first visit (auto|dark|light)
 
 # Source URL of the website, will appear in the footer
