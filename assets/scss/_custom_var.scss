@@ -1,8 +1,7 @@
-$body-font: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', 'Helvetica',
-    'Arial', 'PingFang SC', 'Hiragino Sans GB', 'Source Han Sans CN', 'Source Han Sans SC',
-    'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
-$mono-font: 'Cascadia Code', 'SF Mono', 'Fira Code', 'Consolas', $body-font;
-$title-font: 'Product Sans', $body-font;
+$body-font: -apple-system, BlinkMacSystemFont, 'Noto Sans JP', sans-serif;
+
+$mono-font: $body-font;
+$title-font: $body-font;
 $body-font-size: 16px;
 
 $light-color-primary: #606DA1; // https://irocore.com/fujinando/
