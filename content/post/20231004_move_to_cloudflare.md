@@ -2,7 +2,7 @@
 title = "Google DomainsからCloudflareへ乗り換える"
 date = 2023-10-04T13:01:52Z
 showLicense = false
-tags = []
+tags = ["Cloudflare","Google Domains","Domain"]
 +++
 
 # Google Domainsのサービス終了
