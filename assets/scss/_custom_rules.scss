@@ -1,9 +1,9 @@
-img[alt="20220606_readonly"]{
-    width: 50%;
-    height: 50%;
+img {
+    margin: 1rem !important;
+    border: solid 1px #dddddd;
 }
 
-.markdown-body kbd{
+.markdown-body kbd {
     font-size: 14px;
-    line-height: 15px!important;
+    line-height: 15px !important;
 }
