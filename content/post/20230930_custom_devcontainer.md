@@ -9,7 +9,7 @@ tags = ["container","docker","dev container"]
 開発環境が特定のバージョンに縛られていたりすると、開発環境の構築が非常にコストとなることがよくあります。  
 ライブラリとかフレームワークをバージョンアップしとけって話ではあるんですが、開発環境自体の構築に時間を取られたくないのも事実です。  
 そこで、`dev container`一発で開発環境を構築するべく、自分に合ったイメージのやつを作りたいと思います。  
-ここで使ったコード類は[github](https://github.com/)においてあるので、コードを見たいとか、実際に動かしてみたい場合は、ご参照ください。
+ここで使ったコード類は[github](https://github.com/b0cchi/angular_devcontainer)においてあるので、コードを見たいとか、実際に動かしてみたい場合は、ご参照ください。
 
 
 ## Dockerfile & devcontainer.json
@@ -23,7 +23,6 @@ tags = ["container","docker","dev container"]
 FROM node:14.15.0       # ベースイメージ
 
 RUN npm install -g @angular/cli@12.0.4 \    # angular cliのインストール
-    && npm install
 ```
 
 ### devcontainer.json
@@ -41,6 +40,8 @@ RUN npm install -g @angular/cli@12.0.4 \    # angular cliのインストール
       "target": "${containerWorkspaceFolder}/node_modules"
     }
   ],
+  "workspaceFolder": "/workspace",  
+	"workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/workspace,type=bind,consistency=cached",
   "forwardPorts": [4200],
   "customizations": {
     "vscode": {
