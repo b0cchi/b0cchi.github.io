@@ -80,9 +80,8 @@ jobs:
         working-directory: ./src
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        working-directory: ./src
         with:
-          path: ./out
+          path: .src/out
 
   # Deployment job
   deploy:
