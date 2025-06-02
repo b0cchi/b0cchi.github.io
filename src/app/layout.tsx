@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Noto_Sans_JP } from 'next/font/google';
+import { Geist, Geist_Mono, Noto_Sans_JP, Montserrat } from 'next/font/google';
 import './globals.css';
-import Sidebar from '@/components/app-sidebar';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -17,6 +16,13 @@ const geistMono = Geist_Mono({
 	subsets: ['latin'],
 });
 
+const montserrat = Montserrat({
+	subsets: ['latin'],
+	weight: ['400', '700'],
+	variable: '--font-montserrat',
+	display: 'swap',
+});
+
 export const metadata: Metadata = {
 	title: 'b0cchi portfolio',
 	description: 'A portfolio showcasing my work and skills',
@@ -30,11 +36,9 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`${notoSansJp.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`${montserrat.className} ${notoSansJp.className} ${geistSans.variable} ${geistMono.variable} antialiased bg-white`}
 			>
-				<Sidebar>
-					<main>{children}</main>
-				</Sidebar>
+				{children}
 			</body>
 		</html>
 	);
