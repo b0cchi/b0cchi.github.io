@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono, Noto_Sans_JP, Montserrat } from 'next/font/google';
 import './globals.css';
+import Footer from './layout/Footer';
 
 const geistSans = Geist({
 	variable: '--font-geist-sans',
@@ -39,6 +40,7 @@ export default function RootLayout({
 				className={`${montserrat.className} ${notoSansJp.className} ${geistSans.variable} ${geistMono.variable} antialiased bg-white`}
 			>
 				{children}
+				<Footer />
 			</body>
 		</html>
 	);
