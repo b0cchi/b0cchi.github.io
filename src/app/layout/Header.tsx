@@ -6,14 +6,7 @@ export default function Header() {
 	const [scrolled, setScrolled] = useState(false);
 	const [menuOpen, setMenuOpen] = useState(false);
 
-	const navLinks = [
-		{ href: '/', label: 'Home' },
-		{ href: '#', label: 'About' },
-		{ href: '#', label: 'Experience' },
-		{ href: '#', label: 'Projects' },
-		{ href: '#', label: 'Blog' },
-		{ href: '#', label: 'Contact' },
-	];
+	const navLinks = [{ href: '/', label: 'Home' }];
 
 	useEffect(() => {
 		const onScroll = () => setScrolled(window.scrollY > 10);
