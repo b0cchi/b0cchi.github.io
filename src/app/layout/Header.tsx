@@ -34,7 +34,7 @@ export default function Header() {
 				className="font-display text-xl font-bold transition-colors"
 				href="/"
 			>
-				<span>b0cchi</span>
+				<span>B0CCHI.</span>
 			</Link>
 
 			{/* Hamburger menu icon (for mobile) */}

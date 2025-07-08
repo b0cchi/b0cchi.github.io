@@ -3,7 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@theme inline {
+@theme {
 	--color-background: var(--background);
 	--color-foreground: var(--foreground);
 	--font-sans: var(--font-geist-sans);
@@ -45,8 +45,8 @@
 
 :root {
 	--radius: 0.5rem;
-	--background: oklch(0.96 0.01 170.6);
-	--foreground: oklch(0.25 0.01 170.6);
+	--background: rgb(55, 55, 55);
+	--foreground: rgb(235, 235, 235);
 	--card: oklch(0.95 0.01 170.6);
 	--card-foreground: oklch(0.25 0.01 170.6);
 	--popover: oklch(0.95 0.01 170.6);
@@ -118,5 +118,7 @@
 	}
 	body {
 		@apply bg-background text-foreground;
+		background-color: var(--color-background);
+		color: var(--color-foreground);
 	}
 }

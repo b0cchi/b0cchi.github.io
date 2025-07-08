@@ -1,5 +1,4 @@
 'use client';
-import Header from './layout/Header';
 import Typewriter from 'typewriter-effect';
 import {
 	FaJava,
@@ -39,7 +38,6 @@ const skills = [
 export default function Home() {
 	return (
 		<>
-			<Header />
 			<main className="relative pt-24 px-6 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl">
 				<h1 className="text-3xl font-bold mb-4">Hi,</h1>
 				<p className="mb-2">I&apos;m b0cchi</p>
@@ -61,7 +59,7 @@ export default function Home() {
 					{skills.map((skill, i) => (
 						<div
 							key={i}
-							className="flex flex-col items-center justify-center p-4 rounded-2xl shadow-md bg-white dark:bg-gray-800 hover:scale-105 transition-transform duration-300"
+							className="flex flex-col items-center justify-center p-4 rounded-2xl shadow-md bg-white dark:bg-gray-800 hover:scale-105 hover:shadow-lg transform transition-all duration-300"
 						>
 							<div className={`text-5xl mb-2 ${skill.color}`}>{skill.icon}</div>
 							<div className="text-sm font-semibold text-gray-700 dark:text-gray-200">
