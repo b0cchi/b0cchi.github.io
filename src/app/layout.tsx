@@ -10,7 +10,7 @@ const geistSans = Geist({
 });
 const notoSansJp = Noto_Sans_JP({
 	subsets: ['latin'],
-	weight: ['400', '500', '700'], // 必要なウェイトを指定
+	weight: ['400', '500', '700', '900'], // ドラクエ風の太字用に900を追加
 	display: 'swap', // 推奨：レイアウトシフト防止
 });
 const geistMono = Geist_Mono({
@@ -38,7 +38,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`flex flex-col min-h-screen ${montserrat.className} ${notoSansJp.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`flex flex-col min-h-screen ${notoSansJp.className} ${montserrat.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
 				<Header />
 				<div className="flex-1">{children}</div>
