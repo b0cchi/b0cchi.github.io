@@ -38,7 +38,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body
-				className={`flex ${montserrat.className} ${notoSansJp.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
+				className={`flex flex-col min-h-screen ${montserrat.className} ${notoSansJp.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
 				<Header />
 				<div className="flex-1">{children}</div>
