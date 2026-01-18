@@ -21,17 +21,18 @@ export default function Header() {
         w-[90%] max-w-5xl px-6 py-4
         flex items-center justify-between
         transition-all duration-300
-        ${
-					scrolled
-						? 'bg-white/60 backdrop-blur-xl shadow-xl rounded-3xl'
-						: 'bg-transparent shadow-none rounded-none'
+        bg-gradient-to-b from-blue-600 to-blue-800
+        border-4 border-white
+        shadow-[4px_4px_0_rgba(0,0,0,0.3),inset_2px_2px_0_rgba(255,255,255,0.3)]
+        ${scrolled
+					? 'shadow-[4px_4px_0_rgba(0,0,0,0.5),inset_2px_2px_0_rgba(255,255,255,0.3)]'
+					: ''
 				}
-
       ${menuOpen ? 'rounded-b-none' : ''}
       `}
 		>
 			<Link
-				className="font-display text-xl font-bold transition-colors"
+				className="font-display text-xl font-bold transition-colors text-white drop-shadow-[2px_2px_0_rgba(0,0,0,0.5)]"
 				href="/"
 			>
 				<span>B0CCHI.</span>
@@ -44,7 +45,7 @@ export default function Header() {
 				aria-label="Toggle menu"
 			>
 				<svg
-					className="w-6 h-6 text-gray-600"
+					className="w-6 h-6 text-white drop-shadow-[2px_2px_0_rgba(0,0,0,0.5)]"
 					fill="none"
 					stroke="currentColor"
 					strokeWidth={2}
