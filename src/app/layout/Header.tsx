@@ -35,7 +35,7 @@ export default function Header() {
 				className="font-display text-xl font-bold transition-colors text-white drop-shadow-[2px_2px_0_rgba(0,0,0,0.5)]"
 				href="/"
 			>
-				<span>B0CCHI.</span>
+				<span>b0cchi.</span>
 			</Link>
 
 		</header>
