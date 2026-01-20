@@ -4,9 +4,6 @@ import { useEffect, useState } from 'react';
 
 export default function Header() {
 	const [scrolled, setScrolled] = useState(false);
-	const [menuOpen, setMenuOpen] = useState(false);
-
-	const navLinks = [{ href: '/', label: 'Home' }];
 
 	useEffect(() => {
 		const onScroll = () => setScrolled(window.scrollY > 10);
@@ -28,7 +25,6 @@ export default function Header() {
 					? 'shadow-[4px_4px_0_rgba(0,0,0,0.5),inset_2px_2px_0_rgba(255,255,255,0.3)]'
 					: ''
 				}
-      ${menuOpen ? 'rounded-b-none' : ''}
       `}
 		>
 			<Link
