@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && wrangler pages deploy out --project-name=b0cchi"
+    "deploy": "next build && wrangler pages deploy out --project-name=portfolio"
   },
   "dependencies": {
     "@radix-ui/react-collapsible": "^1.1.11",
